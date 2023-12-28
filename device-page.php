@@ -40,7 +40,7 @@
              
                 $product_price += $plus_capacity + $plus_warranty;
                 
-                $resultImage = mysqli_query($conn, "SELECT * From deviceattributes WHERE DeviceColorText = '$product_color'");
+                $resultImage = mysqli_query($conn, "SELECT * From deviceattributes WHERE deviceID = '$deviceID'");
              
                 $row = $resultImage->fetch_assoc();
                 $product_image = $row['ImageColor'];
