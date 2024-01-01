@@ -132,7 +132,7 @@ mysqli_data_seek($resultMulti, 0);
 </style>
 
 <body id="body-pre" >
-    <!--<div id="preloader"></div>-->
+    <div id="preloader"></div>
     <header style="display: none;" >
     <?php
     include 'header.php';

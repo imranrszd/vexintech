@@ -24,7 +24,7 @@ if(isset($_SESSION['user_id'])) {
 </head>
 
 <body>
-    <!--<div id="preloader"></div>-->
+    <div id="preloader"></div>
     <header>
         <?php include 'header.php'; ?>
     </header>

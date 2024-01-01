@@ -11,14 +11,14 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    background: url('Wallpaper.jpg') no-repeat;
+    background: url('image/Presentation1.png') no-repeat;
     background-size: cover;
     background-color: center;
     background-position: center;
 }
 
 #preloader {
-    background: black url(image/image_processing20210830-20178-1eg6b2f.gif) no-repeat center center;
+    background: #111111 url(image/image_processing20210830-20178-1eg6b2f.gif) no-repeat center center;
     background-size: 30%;
     height: 100vh;
     width: 100%;
@@ -29,8 +29,8 @@ body {
 }
 
 .logo {
-    background: #162938;
-    width: 750px;
+    background: hsla(206, 44%, 15%, 0.7);
+    backdrop-filter: blur(15px);
     border-radius: 20px;
     display: flex;
 }
@@ -39,7 +39,9 @@ body {
     position: relative;
     width: 450px;
     height: 500px;
-    background: white;
+    background: hsl(0, 0%, 100%, 0.2);
+    color: white;
+    border: 2px solid white;
     border-radius: 20px;
     backdrop-filter: blur(15px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
@@ -58,7 +60,7 @@ body {
 
 .form-box h2 {
     font-size: 2em;
-    color: #162938;
+    color: #fff;
     text-align: center;
 }
 
@@ -66,7 +68,7 @@ body {
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid #162938;
+    border-bottom: 2px solid #fff;
     margin: 30px 0;
 }
 
@@ -76,7 +78,6 @@ body {
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: #162938;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -91,10 +92,10 @@ body {
     width: 100%;
     height: 100%;
     background: transparent;
+    color: #fff;
     border: none;
     outline: none;
     font-size: 1em;
-    color: #162938;
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
@@ -103,13 +104,13 @@ body {
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: #162938;
+    color: #fff;
     line-height: 57px;
 }
 
 .remember-forgot {
     font-size: .9em;
-    color: #162238;
+    color: #fff;
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
@@ -117,7 +118,7 @@ body {
 }
 
 .remember-forgot label input {
-    accent-color: #162938;
+    accent-color: #fff;
     margin-right: 3px;
 }
 
@@ -133,27 +134,26 @@ body {
 .btn {
     width: 100%;
     height: 45px;
-    background: #162938;
+    background: #fff;
     border: none;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1em;
-    color: #fff;
-    font-weight: 500;
+    color: #162938;
+    font-weight: 700;
 }
 
 .login-register {
     font-size: .9em;
-    color: #162938;
+    color: #fff;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
 }
 
 .login-register p a {
-    color: #162938;
-    text-decoration: none;
+    color: #fff;
     font-weight: 600;
 }
 

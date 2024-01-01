@@ -180,7 +180,7 @@ mysqli_data_seek($resultMulti, 0);
                         <input type="radio" value="" id="512GB">
                         </div>
                     </div>
-                    <p>Waranty: <span id="plusWarantyText" style="font-size: 18px;"></span></p>
+                    <p>Warranty: <span id="plusWarantyText" style="font-size: 18px;"></span></p>
                     <div class="spec">
                         <label class="waranty">
                             <input type="radio" name="waranty" id="6" value="6" onclick="calculate()" checked = checked>

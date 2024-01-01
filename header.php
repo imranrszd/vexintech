@@ -98,7 +98,7 @@ echo '
 
         <div class="profile-box" id="prbox">';
         if (isset($_SESSION['user_id'])) {
-            echo '<h4><span style="color: red; font-size: 1.25em">'.$_SESSION['user_name'].'</span></h4>';
+            echo '<h4><span style="color: darkslateblue; font-size: 1.25em">username: '.$_SESSION['user_name'].'</span></h4>';
             
                 $row = $resultUser->fetch_assoc();
                     if ($row['user_type'] == 'user') {

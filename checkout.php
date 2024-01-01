@@ -55,7 +55,7 @@ if (isset($_POST['pay'])) {
             <img src="icon/logo.png" alt="" style="height: 50px;">
         </a>
         <h2>CHECKOUT</h2>
-        <a href="bag.php" class="bag"><img src="icon/icons8-bag-96.png" alt="" style="height: 30px;"></a>
+        <a href="bag.php" class="bag"><img src="icon/icons8-cart-96 (1).png" alt="" style="height: 30px;"></a>
     </header>
     <main>
         <div class="total-info">

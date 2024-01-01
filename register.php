@@ -8,7 +8,6 @@ if(isset($_POST['submit'])){
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $pass = mysqli_real_escape_string($conn, md5($_POST['password']));
     $cpass = mysqli_real_escape_string($conn, md5($_POST['cpassword']));
-    $phone = $_POST['phone'];
  
     $select_users = mysqli_query($conn, "SELECT * FROM `customer` WHERE cust_email = '$email'
     AND cust_password = '$pass'") or die('query failed');
@@ -19,8 +18,8 @@ if(isset($_POST['submit'])){
        if($pass != $cpass){
           $message[] = 'confirm password not matched';
        }else{
-          mysqli_query($conn, "INSERT INTO `customer` (cust_name, cust_email, cust_password, cust_phone, user_type)
-          VALUES ('$name', '$email', '$pass', '$phone', 'user')") or die('query failed');
+          mysqli_query($conn, "INSERT INTO `customer` (cust_name, cust_email, cust_password, user_type)
+          VALUES ('$name', '$email', '$pass', 'user')") or die('query failed');
           $message[] = 'registered successfully';
           header('location:login.php');
        }

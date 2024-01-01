@@ -17,6 +17,7 @@ $selectAdmin = mysqli_query($conn, "SELECT * FROM `employee` WHERE user_id = '$a
 $selectAllOrder = mysqli_query($conn, "SELECT * FROM `orders`") or die('query failed');
 $selectTransaction = mysqli_query($conn, "SELECT * FROM `transaction`") or die('query failed');
 
+
 if(isset($_POST['approve'])){
     $order_id = $_POST['orderId'];
  
@@ -35,6 +36,7 @@ if(isset($_POST['approve'])){
     or die('query failed');
     header('location:admin.php');
 }
+$selectAllOrderApprove = mysqli_query($conn, "SELECT * FROM `transaction` WHERE approval = 'Approve'") or die('query failed');
 
 /* product */
 if(isset($_POST['add_product'])){
@@ -149,7 +151,7 @@ if(isset($_POST['add_product'])){
                 <?php
                 $orderCount = 0;
                 $profit = 0;
-                while ($fetchOrder = $selectAllOrder -> fetch_assoc()) {
+                while ($fetchOrder = $selectAllOrderApprove -> fetch_assoc()) {
                     $orderCount++;
                     $profit += $fetchOrder['price'];
                 }

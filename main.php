@@ -23,7 +23,7 @@ if(isset($_SESSION['user_id'])) {
 </head>
 
 <body id="body">
-    <!--<div id="preloader"></div>-->
+    <div id="preloader"></div>
     <header>
             
         <!--Search Box -->
@@ -89,7 +89,7 @@ if(isset($_SESSION['user_id'])) {
             <?php if(!isset($user_id)){
                 echo '<h4><span style="color: red; font-size: 1.25em"></span></h4>';}
             else {
-                echo '<h4><span style="color: red; font-size: 1.25em">'.$_SESSION['user_name'].'</span></h4>';
+                echo '<h4><span style="color: darkslateblue; font-size: 1.25em">username: '.$_SESSION['user_name'].'</span></h4>';
             }
                     
             ?>
