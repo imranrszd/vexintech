@@ -208,10 +208,8 @@ mysqli_data_seek($resultMulti, 0);
                     <?php
                     if (isset($_SESSION['user_id'])) {
                         echo '<button type="submit" name="add_to_cart" class="bag">Add to Bag</button>';
-                        echo '<a href="checkout.php"; class="checkout">Buy Now</a>';
                     }else{
                         echo '<a href="login.php" class="bag">Add to Bag</a>';
-                        echo '<a href="login.php" class="checkout">Buy Now</a>';
                     }
                     ?>
                 </form>

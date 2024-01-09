@@ -19,7 +19,7 @@ body {
 
 #preloader {
     background: #111111 url(image/image_processing20210830-20178-1eg6b2f.gif) no-repeat center center;
-    background-size: 30%;
+    background-size: 20%;
     height: 100vh;
     width: 100%;
     position: fixed;

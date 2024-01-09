@@ -100,14 +100,15 @@ if(isset($_SESSION['user_id'])) {
                 $row = $resultUser->fetch_assoc();
                 if ($row['user_type'] == 'user') {
                     echo '
-                    <a href="profile.php" class="view-profile">View Profile</a>';
+                    <a href="profile.php" class="view-profile">View Profile</a>
+                    <a href="logout.php" class="logout" style="color:tomato;" >Logout</a>';
                 }else if($row['user_type'] == 'admin'){
                     echo '
-                    <a href="admin.php" class="view-profile">View Profile</a>';
+                    <a href="admin.php" class="view-profile">View Profile</a>
+                    <a href="logout.php" class="logout" style="color:tomato;" >Logout</a>';
                     
                 }}
             ?>
-            <a href="logout.php" class="logout" style="color:tomato;" >Logout</a>
         </div>
 
         <div class="view-blur" id="viewBlur" onclick="viewiPhone()">
